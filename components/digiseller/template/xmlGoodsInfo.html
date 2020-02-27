@@ -1,0 +1,74 @@
+<table cellpadding="0" cellspacing="0" border="0" class="card">
+  <!-- Powered by http://ok-lab.enomo.info -->
+  <!-- КОММЕНТАРИИ НИ В КОИМ СЛУЧАЕ НЕ УБИРАТЬ - ИСПОЛЬЗУЮТСЯ СКРИПТОМ КАК МЕТКИ!!! -->
+  <!-- begin shablon -->
+  <tr class="cardFirst">
+    <td class="cardTitle">Название товара:</td>
+    <td class="cardDesc">{GOODSNAME}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Цена:</td>
+    <td class="cardDesc"><font class="i_price">{GOODSPRICE}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr class="h_credit">
+    <td class="cardTitle">Продажа в кредит:</td>
+    <td class="cardDesc">Товар можно приобрести в кредит без первоначального взноса.<br />
+          <br />
+      цена при покупке в кредит: {GOODSCREDITPRICE} $ <br />
+      срок погашения кредита: {GOODSCREDITDAYS} дней <br />
+      <br />
+      Для покупки товара в кредит в качестве типа электронной валюты выберете &laquo;WMZ в кредит&raquo;.
+	</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Скидки:</td>
+    <td class="cardDesc">{GOODSDISCOUNT}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Товар:</td>
+    <td class="cardDesc">{GOODSTYPE}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Загружен:</td>
+    <td class="cardDesc">{GOODSDATALOAD}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Описание товара:</td>
+    <td class="cardDesc">
+		{GOODSPREVIEW}
+		{GOODSINFO}
+	</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Дополнительная информация:</td>
+    <td class="cardDesc">{GOODSINFOADDITION}</td>
+  </tr>
+  <!-- end shablon -->
+  <!-- begin shablon -->
+  <tr>
+    <td class="cardTitle">Статистика:</td>
+    <td class="cardDesc">{GOODSSTATISTIC}</td>
+  </tr>
+  <!-- end shablon -->
+</table>
+
+<form id="PayForm" name="PayForm" action="http://www.oplata.info/asp/pay.asp" method="POST">
+<input name="id_goods" type="hidden" value="{ID_GOODS}">
+<input name="id_agent" type="hidden" value="{ID_AGENT}">
+<input name="fail_page" type="hidden" value="{FAIL_PAGE}">
+<div class="buy"><input name="" type="submit" class="button" value="Оплатить товар"></div>
+</form>

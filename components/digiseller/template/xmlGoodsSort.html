@@ -1,0 +1,15 @@
+<script type="text/javascript">
+        function sortBySelected(element) {
+                if( element.options[element.selectedIndex].value!='' ) {
+                        window.location = element.options[element.selectedIndex].value;
+                }
+        }
+</script>
+<form name="form1" method="post" action="">
+      <select name="select" onChange="sortBySelected(this);" class="sorting">
+      <option value="{URL}/sort-name" {N_SELECTED}>по названию А - Я</option>
+      <option value="{URL}/sort-nameDESC" {ND_SELECTED}>по названию Я - А</option>
+      <option value="{URL}/sort-price" {P_SELECTED}>цене - возрастанию</option>
+      <option value="{URL}/sort-priceDESC" {PD_SELECTED}>цене - убыванию</option>
+      </select>
+</form>
